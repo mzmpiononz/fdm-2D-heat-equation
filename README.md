@@ -10,7 +10,7 @@ pip install requirements.txt
 
 run the method
 
-```
+```python
 import os
 from dotenv import load_dotenv
 from wall_2d_fdm import Wall2dFDM
