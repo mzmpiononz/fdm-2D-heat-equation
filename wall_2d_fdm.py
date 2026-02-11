@@ -60,7 +60,7 @@ class Wall2dFDM:
                 plt.text(x + 0.05, y - 0.1, f"{value}", fontsize=9, color='darkred')
         plt.show()
 
-    def plot_heat_map(self, u):
+    def plot_heat_map(self, u, filename):
         """
         plot the heatmap of the results
         """
@@ -158,8 +158,8 @@ class Wall2dFDM:
                   u[k+1, i, j] = self.gamma * (uk_ip1_j + uk_im1_j + uk_i_jp1 + uk_i_jm1 - 4*uk_i_j) + uk_i_j
         return u
 
-        def calculate_heat_flow(self, u):
-            """
+    def calculate_heat_flow(self, u):
+        """
         calculate the horizontal heat flow through the wall following the Fourier'sLaw
         """
         qx = -((u[1][:] - u[0][:]) / self.delta_xy)*self.lambd
