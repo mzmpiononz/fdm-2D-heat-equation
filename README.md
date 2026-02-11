@@ -3,7 +3,7 @@ Finite Difference Method with python applied on 2D heat equation
 
 ## APPLICATION : calculation of a heat flow through a part of a wall
 
-[Presentation of the problem](images/mesh.png)
+![Presentation of the problem](images/mesh.png)
 
  - install requirements
 ```bash
@@ -29,4 +29,4 @@ pip install requirements.txt
 python run.py
 ```
 - results:
-[heat map & heat flow value](images/results.png)
+![heat map & heat flow value](images/results.png)
